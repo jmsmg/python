@@ -6,7 +6,7 @@ apikey = "3b1aa4c93684e6a2b21e4c48a9fbb34a"
 lang = "kr"
 units = "metric" # 변수로 넣어서 대입
 
-api = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={apikey}&lang={lang}&units=metric"
+api = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={apikey}&lang={lang}&units=metric" # 파이썬의 f-string형태
 
 result = requests.get(api)
 data = json.loads(result.text)
